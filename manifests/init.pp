@@ -53,6 +53,7 @@ class nova(
   $periodic_interval = '60',
   $report_interval = '10',
   $root_helper = $::nova::params::root_helper,
+  $config_drive = true,
   $monitoring_notifications = false,
   $prevent_db_sync = false
 ) inherits nova::params {
